@@ -5,26 +5,44 @@
 <!--<![endif]-->
 
 <head>
-<script>
-	$(document).ready(function() 
-		{
-			$('#dropZone').append("<h1>YOUR WISHLIST IS EMPTY</h1>") 
-		}
-	);	//end of document.ready function
 
-	var emptyList = "<h1>YOUR WISHLIST IS EMPTY</h1>";
-	var wishlist = []
+<style type = "text/css">
+	.highlight 
+	{
+		background-color: yellow;
+		color: red;
+	}
+</style>
+
+<script>
+	//$(document).ready(function() 
+	//	{
+			//$('#dropZone').append("<h1>YOUR WISHLIST IS EMPTY</h1>")
+			//$('#error').hide();
+	//	}
+	//);	//end of document.ready function
+	var itemList = [];
+	var wishList = [];
+	var emptyList = [];
 	
 	function emptyDropZone()
 	{	
 		$('#dropZone').empty();
+		wishList = emptyList;
+		$('#dropZone').append("<h1>YOUR WISHLIST IS EMPTY</h1>");
 	}
 	
 	function addDropZone()
 	{
+		var ul = "<ul>";
+		var closeUl = "</ul>";
+		var li = "<li>";
 		var item = document.getElementById('item').value;
+		
 		$('#dropZone').empty();
-		$('#dropZone').append(item);
+		wishList.push(item);
+		$('#dropZone').append(wishList + "<br>");
+		
 	}
 </script>
 
@@ -1009,20 +1027,27 @@
 			2. on product page, item is added to list via button, which brings to dropZone div. -->
 			
 		<div id = "dropZone">
-		<h1>YOUR WISHLIST IS EMPTY</h1><br><!-- hard-coded for now as reference point -->
+		<h1>YOUR WISHLIST IS EMPTY</h1>
+		<br>
+		
 		</div> <!-- end of dropZone div -->
 		
 		Enter item you'd like to add to wishlist: 
 		<input type = "textbox" id = "item" value = ""></input>
+		
 	
 		<input type = "button" id = "addButton" value = "Add item" onClick = "addDropZone()"></input>
 	
 		<br>
+		
+		<!--<div id = "error">
+			<p>Item not found in inventory. Please try again.</p>
+		</div> <!--end of error div -->
 	
 		<input type = "button" id = "emptyButton" value = "Clear Wishlist" onClick = "emptyDropZone()"></input>
 		
 		
-		<!-- ****************************** PUT SHIT HERE ****************************** -->  
+		<!-- ********************************************************************************** -->  
 		
 		
 		
