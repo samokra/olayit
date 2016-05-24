@@ -5,6 +5,46 @@
 <!--<![endif]-->
 
 <head>
+<script>
+	$(document).ready(function() 
+	{
+		$('#dropZone').append("<h1>YOUR WISHLIST IS EMPTY</h1>");
+	}; //end of document.ready function
+
+	var emptyList = "<h1>YOUR WISHLIST IS EMPTY</h1>";
+	var wishlist = [];
+	
+	function emptyDropZone()
+	{	
+		$('#dropZone').empty();
+	}
+	
+	function addDropZone()
+	{
+		$('dropZone').append(wishlist)
+	}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <meta charset="utf-8">
 
   <title>OneUI - Admin Dashboard Template & UI Framework</title>
@@ -967,9 +1007,46 @@
         <h3><input type="text" size="50" value=""/> <input type="button" value="Search" /></h3>
         <h2 class="content-heading">YOUR WISHLIST</h2>
         
-		<!-- PUT SHIT HERE -->
 		
-		<h1>Your wishlist is empty</h1>
+		
+		
+		
+		
+		
+	
+		<!-- ****************************** PUT SHIT HERE ****************************** -->
+		
+		
+		<!-- current status is local adding to wishlist, until the jQuery starts working.
+		from here, it can go two ways:
+		
+			1. add items through THIS page by either entering the name of the item in textbox and 
+			calling from product list.
+
+			2. on product page, item is added to list via button, which brings to dropZone div. -->
+			
+		<div id = "dropZone">
+			<h1>YOUR WISHLIST IS EMPTY</h1><br> <!-- hard-coded for now as reference point -->
+		</div> <!-- end of dropZone div -->
+		
+		
+		
+		Enter item you'd like to add to wishlist: <input type = "textbox" id = "item" value = ""></input>
+		<input type = "button" id = "addButton" value = "Add item" onClick = "AddDropZone()"></input>
+		<br>
+		<input type = "button" id = "emptyButton" value = "Clear Wishlist" onClick = "emptyDropZone()"></input>
+		
+		
+		<!-- ****************************** PUT SHIT HERE ****************************** -->
+		
+		
+		
+		
+		
+	
+		
+		
+		
 		
 		
     </main>
@@ -1040,6 +1117,8 @@
   <script src="assets/js/core/jquery.placeholder.min.js"></script>
   <script src="assets/js/core/js.cookie.min.js"></script>
   <script src="assets/js/app.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
 </body>
 
 </html>
