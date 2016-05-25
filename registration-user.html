@@ -7,98 +7,14 @@
 <head>
   <meta charset="utf-8">
 
-<<<<<<< HEAD
-  <title>OneUI - Admin Dashboard Template & UI Framework</title>
-
+  <title>Create Account</title>
   <script type="text/javascript">
     function finishAccountCreation() {
 
       parent.location = 'base_comp_images.html';
-=======
-  <title>Create Account</title>
-
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js">
-    var url = "http://ec2-54-187-183-27.us-west-2.compute.amazonaws.com:8080/olayit_api";
-
-    $(document).ready(function ()) {
-
-      var users = [];
-
-      $.ajax({
-        url: url + "/Users"
-        , success: function (result) {
-          users = result;
-          console.log(users);
-
-        }
-      });
-      finishAccountCreation: function () {
-
-        /*var loggedIn = true;
-
-
-
-      if (loggedIn === false) {
-
-        parent.location = "./login.html";
-
-      }
-
-
-      var data = new FormData();
-      var c_name = document.getElementById('register-name').value;
-      var c_name = document.getElementById('register-name').value;
-      var c_name = document.getElementById('register-name').value;
-      var c_name = document.getElementById('register-name').value;
-
-      data.append('UserID', 100);
-      data.append('FirstName', 'hannah');
-      data.append('LastName', 'corrello');
-      data.append('Phone', 'place');
-      data.append('OrgId', 'null');
-      data.append('Email', 'key@cs.com');
-      data.append('JobTitle', 'none');
-      data.append('Privilleges', 'User');
-
-      var xhr = new XMLHttpRequest();
-      xhr.open('POST', url + "/Users", true);
-      xhr.onload = function () {
-
-        // do something to response
-        alert("do something");
-        console.log(data);
-
-
-      };
-      xhr.send(data);
-
-
-      alert("end of function");
-
-
-*/
-
-
-        goToNextPage();
-
-
-
-      }
-
-      goToNextPage: function () {
-
-        parent.location = "client-welcome-page.html";
-
-      }
->>>>>>> origin/master
-
     }
   </script>
 
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
   <meta name="description" content="OneUI - Admin Dashboard Template & UI Framework created by pixelcave and published on Themeforest">
   <meta name="author" content="pixelcave">
   <meta name="robots" content="noindex, nofollow">
@@ -155,7 +71,6 @@
             <!-- Register Form -->
             <!-- jQuery Validation (.js-validation-register class is initialized in js/pages/base_pages_register.js) -->
             <!-- For more examples you can check out https://github.com/jzaefferer/jquery-validation -->
-<<<<<<< HEAD
             <form class="js-validation-register form-horizontal push-50-t push-50" action="JavaScript:finishAccountCreation()" method="post">
               <div class="form-group">
                 <div class="col-xs-12">
@@ -170,14 +85,6 @@
                   <div class="form-material form-material-success">
                     <input class="form-control" type="text" id="register-name" name="register-name" placeholder="Please enter your last name...">
                     <label for="register-name">Last Name</label>
-=======
-            <form class="js-validation-register form-horizontal push-50-t push-50" method="post" action="jQuery:finishAccountCreation()">
-              <div class="form-group">
-                <div class="col-xs-12">
-                  <div class="form-material form-material-success">
-                    <input class="form-control" type="text" id="register-name" name="register-name" placeholder="Please enter your name...">
-                    <label for="register-name">Name</label>
->>>>>>> origin/master
                   </div>
                 </div>
               </div>
@@ -291,11 +198,7 @@
               <div class="form-group">
                 <div class="col-xs-12 col-sm-6 col-sm-offset-3">
 
-<<<<<<< HEAD
-                  <button class="btn btn-sm btn-block btn-success" type="submit" onclick="finishAccountCreation();">Done!</button>
-=======
                   <button class="btn btn-sm btn-block btn-success" type="submit">Done!</button>
->>>>>>> origin/master
                 </div>
               </div>
             </form>
