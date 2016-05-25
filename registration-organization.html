@@ -7,7 +7,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>OneUI - Admin Dashboard Template & UI Framework</title>
+  <title>Organization Registration</title>
 
   <script type="text/javascript">
     function finishAccountCreation() {
@@ -70,6 +70,17 @@
 
       });*/
 
+      goToNextPage();
+
+    }
+
+    function goToNextPage() {
+
+      //parent.location=""
+
+      alert("should move to the welcome page");
+
+
     }
   </script>
 
@@ -122,19 +133,19 @@
             <!-- Register Title -->
             <div class="text-center">
               <i class="fa fa-2x fa-circle-o-notch text-primary"></i>
-              <h1 class="h3 push-10-t">Client Account Information</h1>
+              <h1 class="h3 push-10-t">Organization Account Information</h1>
             </div>
             <!-- END Register Title -->
 
             <!-- Register Form -->
             <!-- jQuery Validation (.js-validation-register class is initialized in js/pages/base_pages_register.js) -->
             <!-- For more examples you can check out https://github.com/jzaefferer/jquery-validation -->
-            <form class="js-validation-register form-horizontal push-50-t push-50" method="post">
+            <form class="js-validation-register form-horizontal push-50-t push-50" method="post" action="JavaScript:finishAccountCreation()">
               <div class="form-group">
                 <div class="col-xs-12">
                   <div class="form-material form-material-success">
                     <input class="form-control" type="text" id="register-name" name="register-name" placeholder="Please enter your name...">
-                    <label for="register-name">Name</label>
+                    <label for="register-name">Organization Name</label>
                   </div>
                 </div>
               </div>
@@ -236,22 +247,22 @@
                   </div>
                 </div>
               </div>
-              <!--<div class="form-group">
+              <div class="form-group">
                 <div class="col-xs-12">
                   <div class="form-material form-material-success">
-                    <input class="form-control" type="email" id="register-email" name="register-email" placeholder="Enter your street address...">
-                    <label for="register-address">Street Address</label>
+                    <input class="form-control" type="ein" id="register-ein" name="register-ein" placeholder="Enter your Employer Identification Number...">
+                    <label for="register-ein">Organization EIN</label>
                   </div>
                 </div>
               </div>
               <div class="form-group">
                 <div class="col-xs-12">
                   <div class="form-material form-material-success">
-                    <input class="form-control" type="email" id="register-email" name="register-email" placeholder="Enter your street address...">
-                    <label for="register-address">Street Address</label>
+                    <input class="form-control" type="org-type" id="register-org-type" name="register-org-type" placeholder="Enter the type of organization that you are...">
+                    <label for="register-org-type">Type Of Organization</label>
                   </div>
                 </div>
-              </div>-->
+              </div>
 
               <div class="form-group">
                 <div class="col-xs-12 col-sm-6 col-sm-offset-3">
@@ -267,8 +278,6 @@
     </div>
   </div>
   <!-- END Register Content -->
-
-  <textarea id="testing" size="40"></textarea>
 
   <!-- Register Footer -->
   <div class="pulldown push-30-t text-center animated fadeInUp">
