@@ -7,13 +7,22 @@
 <head>
   <meta charset="utf-8">
 
+<<<<<<< HEAD
   <title>Registration</title>
+=======
+  <title>Organization Registration</title>
+>>>>>>> origin/master
 
   <script type="text/javascript">
     function finishAccountCreation() {
 
+<<<<<<< HEAD
       /*var loggedIn = true;
       var url = "http://ec2-54-187-183-27.us-west-2.compute.amazonaws.com:8080/olayit_api";
+=======
+      var loggedIn = true;
+
+>>>>>>> origin/master
 
 
       if (loggedIn === false) {
@@ -22,9 +31,22 @@
 
       }
 
+<<<<<<< HEAD
       var c_name = document.getElementById('register-name').value;
 
       var data = new FormData();
+=======
+      document.getElementById('testing').value = "This is a test.";
+
+      var url = "http://ec2-54-187-183-27.us-west-2.compute.amazonaws.com:8080/olayit_api";
+
+      var data = new FormData();
+      var c_name = document.getElementById('register-name').value;
+      var c_name = document.getElementById('register-name').value;
+      var c_name = document.getElementById('register-name').value;
+      var c_name = document.getElementById('register-name').value;
+
+>>>>>>> origin/master
       data.append('user', c_name);
       data.append('pwd', 'password');
       data.append('organization', 'place');
@@ -34,11 +56,16 @@
       xhr.open('POST', url + "/Users", true);
       xhr.onload = function () {
         // do something to response
+<<<<<<< HEAD
+=======
+        document.getElementById('testing').value = "It might have worked??";
+>>>>>>> origin/master
         console.log(this.responseText);
       };
       xhr.send(data);
 
 
+<<<<<<< HEAD
       window.location = "./client-welcome-page.html";*/
 
       parent.location = 'base_comp_images.html';
@@ -46,6 +73,44 @@
 
     }
   </script> -->
+=======
+
+      /*
+
+
+      $(document).ready(function () {
+
+        var users = []
+
+        $.ajax({
+          url: url + "/Users"
+          , success: function (result) {
+            users = result;
+            console.log(users);
+
+          }
+        })
+
+
+
+
+
+      });*/
+
+      goToNextPage();
+
+    }
+
+    function goToNextPage() {
+
+      //parent.location=""
+
+      alert("should move to the welcome page");
+
+
+    }
+  </script>
+>>>>>>> origin/master
 
   <meta name="description" content="OneUI - Admin Dashboard Template & UI Framework created by pixelcave and published on Themeforest">
   <meta name="author" content="pixelcave">
@@ -198,7 +263,11 @@
                 <div class="col-xs-12">
                   <div class="form-material form-material-success">
                     <input class="form-control" type="phone-number" id="register-phone" name="register-phone" placeholder="Enter your phone number...">
+<<<<<<< HEAD
                     <label for="register-phone">Contact Phone Number</label>
+=======
+                    <label for="register-phone">Phone Number</label>
+>>>>>>> origin/master
                   </div>
                 </div>
               </div>
@@ -213,6 +282,7 @@
               <div class="form-group">
                 <div class="col-xs-12">
                   <div class="form-material form-material-success">
+<<<<<<< HEAD
                     <input class="form-control" type="ein" id="register-ein" name="register-ein" placeholder="Enter your EIN...">
                     <label for="register-website">Employer Identification Number</label>
                   </div>
@@ -223,17 +293,29 @@
                   <div class="form-material form-material-success">
                     <input class="form-control" type="email" id="register-email" name="register-email" placeholder="Enter your street address...">
                     <label for="register-address">Street Address</label>
+=======
+                    <input class="form-control" type="ein" id="register-ein" name="register-ein" placeholder="Enter your Employer Identification Number...">
+                    <label for="register-ein">Organization EIN</label>
+>>>>>>> origin/master
                   </div>
                 </div>
               </div>
               <div class="form-group">
                 <div class="col-xs-12">
                   <div class="form-material form-material-success">
+<<<<<<< HEAD
                     <input class="form-control" type="email" id="register-email" name="register-email" placeholder="Enter your street address...">
                     <label for="register-address">Street Address</label>
                   </div>
                 </div>
               </div>-->
+=======
+                    <input class="form-control" type="org-type" id="register-org-type" name="register-org-type" placeholder="Enter the type of organization that you are...">
+                    <label for="register-org-type">Type Of Organization</label>
+                  </div>
+                </div>
+              </div>
+>>>>>>> origin/master
 
               <div class="form-group">
                 <div class="col-xs-12 col-sm-6 col-sm-offset-3">
